@@ -1,4 +1,4 @@
-# vue-auth
+# web-lab-4-front
 
 ## Project setup
 ```
