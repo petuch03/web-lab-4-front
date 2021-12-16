@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="col-md-12 form-wrapper">
-      <h1>This page is protected by auth</h1>
+      <h1 style="font-size: 27px">Welcome to the safe zone</h1>
       <form class="signup" @submit.prevent="check">
         <label>input x</label>
         <div>
