@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Index</router-link> |
-      <router-link to="/signin">Sign In</router-link>
+      <router-link to="/">Index</router-link>
       <span v-if="isLoggedIn"> | <a @click="logout">Logout</a></span>
+      <span v-if="!isLoggedIn"> | <router-link to="/signin">Sign In</router-link></span>
     </div>
     <router-view/>
   </div>
