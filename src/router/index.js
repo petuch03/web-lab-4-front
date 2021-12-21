@@ -2,9 +2,9 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import store from '../store/index'
 import Home from "../views/Home.vue";
-import Signin from "@/components/Signin";
-import Signup from "@/components/Signup";
-import Secure from "@/components/Secure";
+import Signin from "../components/Signin";
+import Signup from "../components/Signup";
+import Secure from "../components/Secure";
 
 Vue.use(VueRouter);
 

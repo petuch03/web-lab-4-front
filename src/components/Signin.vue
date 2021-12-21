@@ -22,7 +22,6 @@
 </template>
 
 <script>
-import router from "@/router";
 
 export default {
   data() {
@@ -39,22 +38,6 @@ export default {
           .then(() => this.$router.push('/secure'))
           .catch(err => console.log(err))
     },
-    // async signinUser() {
-    //   let userData = {
-    //     email: this.email,
-    //     password: this.password
-    //   };
-    //   try {
-    //     const {data} = await axios.post(`${server.baseURL}/auth/signin`, userData, {
-    //       headers: {'Access-Control-Allow-Origin': 'http://localhost:8080'}
-    //     });
-    //     helpers.handleToken(data);
-    //     await router.push('main');
-    //   } catch (error) {
-    //     console.log(error);
-    //   }
-    // },
-    //
     navigate() {
       this.$router.push('signup');
     }

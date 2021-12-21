@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <div id="navigation">
       <router-link to="/" class='header'>Index</router-link>
-      <span v-if="isLoggedIn" class='header'> | <router-link to="/Secure">Safe zone</router-link></span>
+      <span v-if="isLoggedIn" class='header'> | <router-link to="/secure">Safe zone</router-link></span>
       <span v-if="isLoggedIn" class='header'> | <a @click="logout">Logout</a></span>
       <span v-if="!isLoggedIn" class='header'> | <router-link to="/signin">Sign In</router-link></span>
     </div>
@@ -23,16 +23,6 @@ export default {
           })
     }
   },
-  // created: function () {
-  //   this.$http.interceptors.response.use(undefined, function (err) {
-  //     return new Promise(function (resolve, reject) {
-  //       if (err.status === 401 && err.config && !err.config.__isRetryRequest) {
-  //         this.$store.dispatch("logout")
-  //       }
-  //       throw err;
-  //     });
-  //   });
-  // },
 }
 </script>
 
@@ -46,16 +36,16 @@ export default {
   color: #2c3e50;
 }
 
-#nav {
+#navigation {
   padding: 30px;
 }
 
-#nav a {
+#navigation a {
   font-weight: bold;
   color: #2c3e50;
 }
 
-#nav a.router-link-exact-active {
+#navigation a.router-link-exact-active {
   color: #42b983;
 }
 
